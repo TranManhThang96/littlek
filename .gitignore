@@ -1,32 +1,69 @@
-# Ignore WordPress core files
-wp-admin/
-wp-includes/
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,wordpress
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,wordpress
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### WordPress ###
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
 wp-config.php
 
-# Ignore plugins and themes
-wp-content/plugins/
-wp-content/themes/
+# Example themes
+/wp-content/themes/twenty*/
 
-# Ignore temporary files
-wp-content/upgrade/
-wp-content/backup-db/
-wp-content/uploads/
+# Example plugin
+/wp-content/plugins/hello.php
 
-# Ignore log files
-wp-content/debug.log
-wp-content/*.log
+# Uploads
+/wp-content/uploads/
 
-# Ignore unnecessary configuration files
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
+# Log files
+*.log
 
-# Ignore WordPress installation files
-license.txt
-readme.html
+# htaccess
+/.htaccess
 
-# Ignore system and temporary files (Linux)
-Thumbs.db
-.DS_Store
-.DS_Store?
-.__MACOSX/
-*.swp
+# All plugins
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,wordpress
