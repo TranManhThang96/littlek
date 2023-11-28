@@ -1,50 +1,32 @@
-# Created by https://www.toptal.com/developers/gitignore/api/wordpress
-# Edit at https://www.toptal.com/developers/gitignore?templates=wordpress
-
-### WordPress ###
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-
-# Configuration
+# Ignore WordPress core files
+wp-admin/
+wp-includes/
 wp-config.php
 
-# Example themes
-/wp-content/themes/twenty*/
+# Ignore plugins and themes
+wp-content/plugins/
+wp-content/themes/
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Ignore temporary files
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/uploads/
 
-# Uploads
-/wp-content/uploads/
+# Ignore log files
+wp-content/debug.log
+wp-content/*.log
 
-# Log files
-*.log
+# Ignore unnecessary configuration files
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
 
-# htaccess
-/.htaccess
+# Ignore WordPress installation files
+license.txt
+readme.html
 
-# All plugins
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
-
-
-# End of https://www.toptal.com/developers/gitignore/api/wordpress
+# Ignore system and temporary files (Linux)
+Thumbs.db
+.DS_Store
+.DS_Store?
+.__MACOSX/
+*.swp
